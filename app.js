@@ -107,18 +107,6 @@
     });
   });
 
-  function buildWhatsAppUrl(message) {
-    const number = String(config.whatsapp || '').replace(/\D/g, '');
-    return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
-  }
-
-  $$('.js-whatsapp-link').forEach(link => {
-    const baseMessage = `Hola ${config.businessName || 'Hidro Casa HN'}, deseo información sobre sus productos hidropónicos.`;
-    link.href = buildWhatsAppUrl(baseMessage);
-    link.target = '_blank';
-    link.rel = 'noopener';
-  });
-
   const emailLink = $('.js-email-link');
   if (emailLink && config.email) {
     emailLink.textContent = config.email;
@@ -151,13 +139,14 @@
       form.get('mensaje') ? `Consulta: ${form.get('mensaje')}` : 'Agradezco información sobre precio, disponibilidad y envío.'
     ].join('\n');
 
-    const number = String(config.whatsapp || '').replace(/\D/g, '');
-    if (!number || /0{6,}/.test(number)) {
-      showToast('Configura el número de WhatsApp en config.js antes de publicar.');
+    const email = String(config.email || '').trim();
+    if (!email || !email.includes('@')) {
+      showToast('Configura el correo de ventas en config.js antes de publicar.');
       return;
     }
 
-    window.open(buildWhatsAppUrl(message), '_blank', 'noopener');
+    const subject = `Solicitud de cotización - ${config.businessName || 'Hidro Casa HN'}`;
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
   });
 
   $('#year').textContent = new Date().getFullYear();

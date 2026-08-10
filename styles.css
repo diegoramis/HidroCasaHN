@@ -454,7 +454,7 @@ h3 { margin-bottom: 10px; font-size: 1.35rem; }
   box-shadow: 0 12px 30px rgba(0,0,0,.2);
 }
 .quote-dock__icon { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; color: var(--green-900); background: white; }
-.whatsapp-float {
+.contact-float {
   position: fixed;
   right: 22px;
   bottom: 22px;
@@ -578,7 +578,7 @@ h3 { margin-bottom: 10px; font-size: 1.35rem; }
   .modal-grid > div { padding: 28px 22px 32px; }
   .spec-table > div { gap: 12px; font-size: .9rem; }
   .quote-dock { left: 14px; bottom: 14px; }
-  .whatsapp-float { right: 14px; bottom: 14px; }
+  .contact-float { right: 14px; bottom: 14px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,6 +1,5 @@
 window.HIDROCASA_CONFIG = {
   businessName: "Hidro Casa HN",
-  whatsapp: "+50488425180",
   email: "ventas@hidrocasahn.com",
   products: {
     senior: {

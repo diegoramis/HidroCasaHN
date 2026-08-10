@@ -101,7 +101,7 @@
     button.addEventListener('click', () => button.closest('dialog')?.close());
   });
 
-  $$('.product-modal').forEach(dialog => {
+  $$('.product-modal, .brochure-modal').forEach(dialog => {
     dialog.addEventListener('click', event => {
       if (event.target === dialog) dialog.close();
     });

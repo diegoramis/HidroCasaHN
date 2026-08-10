@@ -585,3 +585,72 @@ h3 { margin-bottom: 10px; font-size: 1.35rem; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+
+/* Video de la sección Cómo funciona */
+.how-video {
+  display: grid;
+  grid-template-columns: .72fr 1.28fr;
+  align-items: center;
+  gap: 38px;
+  margin-top: 42px;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: white;
+  box-shadow: 0 12px 35px rgba(16,67,42,.07);
+}
+.how-video__copy h3 { margin-bottom: 12px; font-size: clamp(1.55rem, 2.2vw, 2.15rem); }
+.how-video__copy > p:last-child { margin-bottom: 0; color: var(--muted); }
+.how-video__player { overflow: hidden; border-radius: var(--radius-md); background: #061a12; box-shadow: 0 12px 32px rgba(0,0,0,.16); }
+.how-video__player video { display: block; width: 100%; max-height: 560px; background: #000; }
+
+/* Enlaces de ficha técnica en el pie */
+.footer-link-button {
+  display: block;
+  margin: 9px 0;
+  padding: 0;
+  border: 0;
+  color: #cfddd4;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.footer-link-button:hover { color: white; text-decoration: underline; }
+
+/* Fichas técnicas visuales */
+.brochure-modal {
+  width: min(1180px, calc(100% - 34px));
+  max-height: calc(100vh - 34px);
+  padding: 0;
+  border: 0;
+  border-radius: 24px;
+  background: #f7faf7;
+  box-shadow: 0 30px 90px rgba(0,0,0,.35);
+}
+.brochure-modal::backdrop { background: rgba(5, 30, 20, .78); backdrop-filter: blur(4px); }
+.brochure-modal__header { padding: 40px 54px 28px; background: white; border-bottom: 1px solid var(--line); }
+.brochure-modal__header h2 { margin-bottom: 10px; }
+.brochure-modal__header > p:last-child { max-width: 760px; margin-bottom: 0; color: var(--muted); }
+.brochure-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding: 28px;
+}
+.brochure-gallery a {
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 6px 18px rgba(16,67,42,.06);
+}
+.brochure-gallery img { width: 100%; height: auto; }
+
+@media (max-width: 760px) {
+  .how-video { grid-template-columns: 1fr; padding: 22px; }
+  .brochure-modal__header { padding: 34px 26px 22px; }
+  .brochure-gallery { grid-template-columns: 1fr; padding: 18px; }
+}

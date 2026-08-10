@@ -208,6 +208,20 @@
             <p>Revisa el nivel de agua, poda cuando sea necesario y disfruta tu cosecha.</p>
           </li>
         </ol>
+
+        <div class="how-video">
+          <div class="how-video__copy">
+            <p class="eyebrow">Video de instalación</p>
+            <h3>Mira cómo preparar y conectar tu sistema LetPot.</h3>
+            <p>Consulta el proceso de instalación y conexión con la aplicación directamente desde esta guía.</p>
+          </div>
+          <div class="how-video__player">
+            <video controls preload="metadata" playsinline aria-label="Video de instalación y conexión del sistema hidropónico LetPot">
+              <source src="assets/letpot-como-funciona.mp4" type="video/mp4">
+              Tu navegador no puede reproducir este video.
+            </video>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -326,8 +340,8 @@
       <div>
         <h2>Información</h2>
         <a href="#contacto">Contacto</a>
-        <a href="https://letpot.com/products/letpot-senior-12-pod-hydroponic-growing-system-with-app-control" target="_blank" rel="noopener">Ficha oficial LetPot Senior</a>
-        <a href="https://letpot.com/products/smart-indoor-garden-seed-pod-kits" target="_blank" rel="noopener">Ficha oficial del kit</a>
+        <button class="footer-link-button js-open-modal" type="button" data-modal="modal-ficha-senior">Ficha técnica LetPot SE</button>
+        <button class="footer-link-button js-open-modal" type="button" data-modal="modal-ficha-kit">Ficha técnica del kit AC-172</button>
       </div>
     </div>
     <div class="container footer__bottom">
@@ -384,6 +398,80 @@
         </dl>
         <button class="button js-add-quote js-close-after-add" type="button" data-product="kit">Agregar a cotización</button>
       </div>
+    </div>
+  </dialog>
+
+
+  <dialog class="brochure-modal" id="modal-ficha-senior">
+    <button class="modal-close js-close-modal" type="button" aria-label="Cerrar">×</button>
+    <div class="brochure-modal__header">
+      <p class="eyebrow">Ficha técnica</p>
+      <h2>LetPot SE · LPH-SE</h2>
+      <p>Revisa las imágenes de la ficha técnica del sistema. Selecciona cualquier imagen para verla en tamaño completo.</p>
+    </div>
+    <div class="brochure-gallery">
+          <a href="assets/ficha-letpot-se-01.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 1 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-01.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 1 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-02.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 2 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-02.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 2 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-03.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 3 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-03.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 3 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-04.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 4 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-04.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 4 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-05.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 5 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-05.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 5 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-06.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 6 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-06.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 6 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-07.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 7 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-07.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 7 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-08.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 8 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-08.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 8 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-09.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 9 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-09.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 9 de 10" loading="lazy">
+          </a>
+          <a href="assets/ficha-letpot-se-10.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 10 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-letpot-se-10.jpg" alt="Ficha técnica del sistema LetPot SE LPH-SE, imagen 10 de 10" loading="lazy">
+          </a>
+    </div>
+  </dialog>
+
+  <dialog class="brochure-modal" id="modal-ficha-kit">
+    <button class="modal-close js-close-modal" type="button" aria-label="Cerrar">×</button>
+    <div class="brochure-modal__header">
+      <p class="eyebrow">Ficha técnica</p>
+      <h2>Kit AC-172</h2>
+      <p>Revisa las imágenes de la ficha técnica del kit. Selecciona cualquier imagen para verla en tamaño completo.</p>
+    </div>
+    <div class="brochure-gallery">
+          <a href="assets/ficha-ac-172-01.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 1 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-ac-172-01.jpg" alt="Ficha técnica del kit AC-172, imagen 1 de 7" loading="lazy">
+          </a>
+          <a href="assets/ficha-ac-172-02.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 2 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-ac-172-02.jpg" alt="Ficha técnica del kit AC-172, imagen 2 de 7" loading="lazy">
+          </a>
+          <a href="assets/ficha-ac-172-03.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 3 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-ac-172-03.jpg" alt="Ficha técnica del kit AC-172, imagen 3 de 7" loading="lazy">
+          </a>
+          <a href="assets/ficha-ac-172-04.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 4 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-ac-172-04.jpg" alt="Ficha técnica del kit AC-172, imagen 4 de 7" loading="lazy">
+          </a>
+          <a href="assets/ficha-ac-172-05.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 5 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-ac-172-05.jpg" alt="Ficha técnica del kit AC-172, imagen 5 de 7" loading="lazy">
+          </a>
+          <a href="assets/ficha-ac-172-06.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 6 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-ac-172-06.jpg" alt="Ficha técnica del kit AC-172, imagen 6 de 7" loading="lazy">
+          </a>
+          <a href="assets/ficha-ac-172-07.jpg" target="_blank" rel="noopener" aria-label="Abrir imagen 7 de la ficha técnica en tamaño completo">
+            <img src="assets/ficha-ac-172-07.jpg" alt="Ficha técnica del kit AC-172, imagen 7 de 7" loading="lazy">
+          </a>
     </div>
   </dialog>
 
